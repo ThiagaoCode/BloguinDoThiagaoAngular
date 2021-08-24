@@ -1,0 +1,10 @@
+#img-bg{
+    background-image: url("https://imgur.com/JT11eys.jpg");
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
