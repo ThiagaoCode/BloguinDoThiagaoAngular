@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   getByIdUsuario(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>('https://bloggenturma28.herokuapp.com/usuarios/15')
+    return this.http.get<Usuario>(`https://bloggenturma28.herokuapp.com/usuarios/${id}`)
 
   }
 
