@@ -8,7 +8,7 @@ export class Postagem{
     
     public texto: string
 
-    public date: Date
+    public data: Date
 
     public usuario: Usuario
 
