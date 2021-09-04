@@ -19,9 +19,21 @@ export class PostagemService {
     return this.http.get<Postagem[]>("https://bloggenturma28.herokuapp.com/postagens")
   }
 
+  getByIdPostagem(id: number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://bloggenturma28.herokuapp.com/postagens/${id}`)
+  }
+
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
     return this.http.post<Postagem>("https://bloggenturma28.herokuapp.com/postagens", postagem)
+  }
+
+  putPostagem(postagem: Postagem): Observable<Postagem>{
+    return this.http.put<Postagem>("https://bloggenturma28.herokuapp.com/postagens", postagem)
+  }
+
+  deletePostagem(id: number){
+    return this.http.delete<Postagem>(`https://bloggenturma28.herokuapp.com/postagens/${id}`)
   }
 
   
