@@ -48,6 +48,18 @@ export class AuthService {
     return ok
   }
 
+  adm(){
+    let ok = false // == let ok: boolean = false ---> pode ser escrita com mais tipagem
+    
+    if(environment.tipo == 'admin'){
+      ok = true
+    }
+
+    return ok
+  }
+
+  
+
 
 
 }

@@ -14,7 +14,7 @@
 
       
         
-        <li class="nav-item pxl-7">
+        <li *ngIf="auth.adm()" class="nav-item pxl-7">
           <a [routerLink]="['/usuario-edit', id]">
                 <p class="text-white fs-16 ml-3">Editar
                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
