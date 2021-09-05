@@ -26,6 +26,11 @@ export class TemaService {
 
   }
 
+  getByNomeTema(nome: string): Observable<Tema[]>{
+    return this.http.get<Tema[]>(`https://bloggenturma28.herokuapp.com/tema/nome/${nome}`)
+
+  }
+
   postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>("https://bloggenturma28.herokuapp.com/tema", tema) // - API do professor //--> Inserir: , this.token --> Após config na basesecurity api
 
