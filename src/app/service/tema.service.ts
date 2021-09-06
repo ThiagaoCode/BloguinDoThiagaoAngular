@@ -17,31 +17,31 @@ export class TemaService {
 
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>("https://bloggenturma28.herokuapp.com/tema") // - API do professor//--> Inserir: , this.token --> Após config na basesecurity api
+    return this.http.get<Tema[]>("https://thiagaobloguin.herokuapp.com/tema") // - API do professor//--> Inserir: , this.token --> Após config na basesecurity api
 
   }
 
   getByIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>(`https://bloggenturma28.herokuapp.com/tema/${id}`)
+    return this.http.get<Tema>(`https://thiagaobloguin.herokuapp.com/tema/${id}`)
 
   }
 
   getByNomeTema(nome: string): Observable<Tema[]>{
-    return this.http.get<Tema[]>(`https://bloggenturma28.herokuapp.com/tema/nome/${nome}`)
+    return this.http.get<Tema[]>(`https://thiagaobloguin.herokuapp.com/tema/nome/${nome}`)
 
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>("https://bloggenturma28.herokuapp.com/tema", tema) // - API do professor //--> Inserir: , this.token --> Após config na basesecurity api
+    return this.http.post<Tema>("https://thiagaobloguin.herokuapp.com/tema", tema) // - API do professor //--> Inserir: , this.token --> Após config na basesecurity api
 
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>("https://bloggenturma28.herokuapp.com/tema", tema)
+    return this.http.put<Tema>("https://thiagaobloguin.herokuapp.com/tema", tema)
   }
 
   deleteTema(id: number){
-    return this.http.delete(`https://bloggenturma28.herokuapp.com/tema/${id}`)
+    return this.http.delete(`https://thiagaobloguin.herokuapp.com/tema/${id}`)
   }
 
 

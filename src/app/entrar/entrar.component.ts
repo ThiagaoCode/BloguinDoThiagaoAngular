@@ -50,6 +50,12 @@ export class EntrarComponent implements OnInit {
       if(erro.status == 500){
         this.alertas.showAlertDanger('Usuário ou senha esão incorretos!')
       }
+
+      if(erro.status == 400){
+        this.alertas.showAlertDanger('Usuário ou senha esão incorretos!')
+      }
+
+
     })
 
 
