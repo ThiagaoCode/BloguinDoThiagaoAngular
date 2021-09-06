@@ -16,29 +16,29 @@ export class PostagemService {
   }
 
   getAllPostagens(): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>("https://bloggenturma28.herokuapp.com/postagens")
+    return this.http.get<Postagem[]>("https://thiagaobloguin.herokuapp.com/postagens")
   }
 
   getByIdPostagem(id: number): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://bloggenturma28.herokuapp.com/postagens/${id}`)
+    return this.http.get<Postagem>(`https://thiagaobloguin.herokuapp.com/postagens/${id}`)
   }
 
   getByTituloPostagem(titulo: string): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>(`https://bloggenturma28.herokuapp.com/postagens/titulo/${titulo}`)
+    return this.http.get<Postagem[]>(`https://thiagaobloguin.herokuapp.com/postagens/titulo/${titulo}`)
 
   }
 
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>("https://bloggenturma28.herokuapp.com/postagens", postagem)
+    return this.http.post<Postagem>("https://thiagaobloguin.herokuapp.com/postagens", postagem)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>("https://bloggenturma28.herokuapp.com/postagens", postagem)
+    return this.http.put<Postagem>("https://thiagaobloguin.herokuapp.com/postagens", postagem)
   }
 
   deletePostagem(id: number){
-    return this.http.delete<Postagem>(`https://bloggenturma28.herokuapp.com/postagens/${id}`)
+    return this.http.delete<Postagem>(`https://thiagaobloguin.herokuapp.com/postagens/${id}`)
   }
 
   
